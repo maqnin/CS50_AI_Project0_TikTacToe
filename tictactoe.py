@@ -170,26 +170,3 @@ def min_value(board):
             if v == -1:
                 return v, move
     return v, move
-
-# if __name__ == "__main__":
-#     board = initial_state()
-#     plr = player(board)
-#     print(f"Player: {plr}")
-#     available_actions = actions(board)
-#     print(f"Actions: {available_actions}")
-#     updated_board1 = result(board, available_actions[0])
-#     updated_board2 = result(updated_board1, available_actions[3])
-#     updated_board3 = result(updated_board2, available_actions[2])
-#     updated_board4 = result(updated_board3, available_actions[5])
-#     updated_board5 = result(updated_board4, available_actions[1])
-#     print(updated_board5)
-#     temp_res = winner(updated_board5)
-#     print(f"Winner: {temp_res}")
-#
-#     game_finished = terminal(updated_board5)
-#     print(f"Terminal: {game_finished}")
-#     util = utility(updated_board5)
-#     print(f"Utility: {util}")
-#     # minimax(updated_board1)
-#     val = max_value(updated_board1)
-#     print(f"Max Value: {val}")
